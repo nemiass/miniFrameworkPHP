@@ -1,6 +1,6 @@
 <?php
 
-define('ROOT', dirname(dirname(__FILE__)));
+define('ROOT', dirname(__FILE__, 2));
 define('DS', DIRECTORY_SEPARATOR);
 //mejorado
 spl_autoload_register(function ($nombre_clase) {
