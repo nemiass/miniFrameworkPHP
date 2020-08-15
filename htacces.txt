@@ -1,0 +1,7 @@
+#por si el index esta en view, o en otra 
+carpeta cambiamos view por donde se encuentre en index
+<IfModule mod_rewrite.c> 
+    RewriteEngine on
+    RewriteRule ^$ view/  [L]
+    RewriteRule ^(.*)$ view/$1 [L]
+</IfModule> 
